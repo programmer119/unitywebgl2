@@ -11,3 +11,4 @@ git commit -m commitresource
 timeout 1
 
 git push
+timeout 10

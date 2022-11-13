@@ -74,7 +74,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Metafest device _ OTHER(Desktop)",
-        productVersion: "0.1",
+        productVersion: "0.3",
         showBanner: unityShowBanner,
       };
 
@@ -119,7 +119,7 @@
         }).then((unityInstance) => {
           loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
-            window.vuplex.SetFullscreen(1)/*https://support.vuplex.com/articles/webgl-fullscreen*/;
+            unityInstance.SetFullscreen(1);
           };
         }).catch((message) => {
           alert(message);
